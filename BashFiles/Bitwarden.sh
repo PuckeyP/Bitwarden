@@ -1,6 +1,7 @@
-sudo docker pull portainer/portainer-ce
+sudo docker pull bitwardenrs/server:latest
 sudo docker run --restart always -d \
-                -p 9000:9000 \
-                -v /var/run/docker.sock:/var/run/docker.sock \
-                -v portainer_data:/data \
-                portainer/portainer-ce
+                -p 8080:80 \
+                -v /Bitwarden/bw-data:/data/ \
+                -v /etc/ssl/certs/:/ssl/ \
+                -e ROCKET_TLS='{certs="/ssl/bitwarden.crt,key="/ssl/bitwarden.key"}' \
+                bitwarden
