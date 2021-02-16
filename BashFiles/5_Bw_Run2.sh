@@ -1,4 +1,3 @@
-sudo docker pull bitwardenrs/server
 sudo docker run \
     --restart always \
     --name Bitwarden \
