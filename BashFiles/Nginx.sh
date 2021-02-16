@@ -10,7 +10,6 @@ sudo docker run \
 	-p 443:443 \
 	-d nginx
 
-
 #	--mount type=bind,source=/home/pi/RaspTest/Nginx/Certs,target=/etc/nginx/certs,readonly \
 #	--mount type=bind,source=/home/pi/RaspTest/Nginx/Config/nginx.conf,target=/etc/nginx/conf/nginx.conf,readonly \
 #	--mount type=bind,source=/home/pi/RaspTest/Nginx/Certs,target=/etc/ssl/private,readonly \

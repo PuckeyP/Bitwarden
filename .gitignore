@@ -1,3 +1,5 @@
 BashFiles/private-ca.key
 bw-data/rsa_key.der
 bw-data/rsa_key.pem
+bw-data/db.sqlite3
+
